@@ -1,5 +1,8 @@
 #ifndef LISTA_ITINERARIO_H
 #define LISTA_ITINERARIO_H
+#include <string>
+
+using namespace std;
 
 struct Node {
     string nomeParada;

@@ -1,6 +1,7 @@
 #include "lista_itinerario.h"
 #include <iostream>
 #include <cstdlib>
+#include <string>
 
 using namespace std;
 
@@ -129,6 +130,12 @@ void removerPorNome(ListaDuplamenteEncadeada &lista, string nomeBusca) {
         atual->proximo->anterior = atual->anterior;
     } else {
         lista.fim = atual->anterior;
+    }
+
+    if (atual->anterior != NULL) {
+        atual->anterior->proximo = atual->proximo;
+    } else {
+        lista.inicio = atual->proximo;
     }
 
     delete atual;
