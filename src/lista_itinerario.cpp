@@ -136,3 +136,26 @@ void removerPorNome(ListaDuplamenteEncadeada &lista, string nomeBusca) {
 
     cout << "Parada " << nomeBusca << " removida com sucesso!" << endl;
 }
+
+void imprimirIda(ListaDuplamenteEncadeada lista) {
+    Node* atual = lista.inicio;
+
+    cout << "Rota de Ida: ";
+    while (atual != NULL) {
+        cout << atual->nomeParada << " -> ";
+        atual = atual->proximo;
+    }
+    cout << "FIM" << endl;
+}
+
+void imprimirVolta(ListaDuplamenteEncadeada lista) {
+    Node* atual = lista.fim;
+
+    cout << "Rota de Volta: ";
+    while (atual != NULL) {
+        cout << atual->nomeParada << " -> ";
+        atual = atual->anterior;
+    }
+    cout << "FIM" << endl;
+}
+

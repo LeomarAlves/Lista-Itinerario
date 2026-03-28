@@ -19,7 +19,8 @@ void insereFim(ListaDuplamenteEncadeada &lista, string nome);
 void inserePorNome(ListaDuplamenteEncadeada &lista, string nomeBusca, string novoNome);
 void removerInicio(ListaDuplamenteEncadeada &lista);
 void removerFim(ListaDuplamenteEncadeada &lista);
-
-
+void removerPorNome(ListaDuplamenteEncadeada &lista, string nomeBusca);
+void imprimirIda(ListaDuplamenteEncadeada lista);
+void imprimirVolta(ListaDuplamenteEncadeada lista);
 
 #endif
