@@ -166,3 +166,22 @@ void imprimirVolta(ListaDuplamenteEncadeada lista) {
     cout << "FIM" << endl;
 }
 
+void imprimeTotalParadas(ListaDuplamenteEncadeada lista) {
+    cout << "Total de paradas: " << lista.totalParadas << endl;
+}
+
+void buscarPorNome(ListaDuplamenteEncadeada lista, string nomeBusca) {
+    Node* atual = lista.inicio;
+    bool encontrou = false;
+
+    while (atual != NULL) {
+        if (atual->nomeParada.find(nomeBusca) != string::npos) {
+        cout << atual->nomeParada << endl;
+        encontrou = true;
+        }
+        atual = atual->proximo;
+    }
+    if(!encontrou) {
+            cout << "Parada não encontrada!" << endl;
+        }
+}
