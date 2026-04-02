@@ -12,21 +12,26 @@ int main () {
     minhaRota.fim = NULL;
     minhaRota.totalParadas = 0;
 
-    insereInicio(minhaRota, "Terminal Centro");
-    insereFim(minhaRota, "Shopping");
-    insereFim(minhaRota, "Univali");
-    insereFim(minhaRota, "Posto de Gasolina");
+    int opcao;
+    string nomeBusca, novoNome;
 
-    cout << "-- TESTE DE INSERÇÃO --" << endl;
-    imprimirIda(minhaRota);
-    imprimirVolta(minhaRota);
-    insereInicio(minhaRota,"Garagem");
+    do
+    {
+        cout << "\n--- MENU DO ONIBUS ---" << endl;
+        cout << "1. Inserir parada no fim" << endl;
+        cout << "2. Inserir parada no inicio" << endl;
+        cout << "3. Remover parada" << endl;
+        cout << "4. Buscar parada (parcial)" << endl;
+        cout << "5. Mostrar rota (Ida e Volta)" << endl;
+        cout << "6. Total de paradas" << endl;
+        cout << "0. Sair" << endl;
+        cout << "Escolha uma opcao: ";
+        cin >> opcao;
 
-    cout << "-- TESTE DE REMOÇÃO --" << endl;
-    removerPorNome(minhaRota, "Shopping");
-    imprimirIda(minhaRota);
+        
 
-    imprimeTotalParadas(minhaRota);
+    } while (opcao != 0);
+    
     
     return 0;
 }
