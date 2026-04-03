@@ -18,12 +18,15 @@ int main () {
     do
     {
         cout << "\n--- MENU DO ONIBUS ---" << endl;
-        cout << "1. Inserir parada no fim" << endl;
-        cout << "2. Inserir parada no inicio" << endl;
-        cout << "3. Remover parada" << endl;
-        cout << "4. Buscar parada (parcial)" << endl;
-        cout << "5. Mostrar rota (Ida e Volta)" << endl;
-        cout << "6. Total de paradas" << endl;
+        cout << "1. Inserir parada no início" << endl;
+        cout << "2. Inserir parada no fim" << endl;
+        cout << "3. Inserir parada por posição" << endl;
+        cout << "4. Remover primeira parada" << endl;
+        cout << "5. Remover última parada" << endl;
+        cout << "6. Buscar parada por nome" << endl;
+        cout << "7. Listar rota completa (trajeto de ida)";
+        cout << "8. Listar rota inversa (trajeto de volta)";
+        cout << "9. Contar paradas";
         cout << "0. Sair" << endl;
         cout << "Escolha uma opcao: ";
         cin >> opcao;
