@@ -29,6 +29,7 @@ void insereInicio(ListaDuplamenteEncadeada &lista, string nome) {
 
     lista.inicio = novoNode;
     lista.totalParadas++;
+    cout << "Parada: " << nome << " adicionada com sucesso!" << endl;
 }
 
 void insereFim(ListaDuplamenteEncadeada &lista, string nome) {
@@ -46,6 +47,7 @@ void insereFim(ListaDuplamenteEncadeada &lista, string nome) {
 
     lista.fim = novoNode;
     lista.totalParadas++;
+    cout << "Parada: " << nome << " adicionada com sucesso!" << endl;
 }
 
 void inserePorNome(ListaDuplamenteEncadeada &lista, string nomeBusca, string novoNome) {
@@ -74,7 +76,7 @@ void inserePorNome(ListaDuplamenteEncadeada &lista, string nomeBusca, string nov
     atual->proximo = novoNode;
     lista.totalParadas++;
 
-    cout << "Parada " << nomeBusca << " adicionada com sucesso!" << endl;
+    cout << "Parada " << novoNome << " adicionada com sucesso!" << endl;
 }
 
 void removerInicio(ListaDuplamenteEncadeada &lista) {
@@ -94,6 +96,7 @@ void removerInicio(ListaDuplamenteEncadeada &lista) {
 
     delete alvo;
     lista.totalParadas--;
+    cout << "Parada removida com sucesso!";
 }
 
 void removerFim(ListaDuplamenteEncadeada &lista){
@@ -112,6 +115,7 @@ void removerFim(ListaDuplamenteEncadeada &lista){
 
     delete alvo;
     lista.totalParadas--;
+    cout << "Parada removida com sucesso!";
 }
 
 void removerPorNome(ListaDuplamenteEncadeada &lista, string nomeBusca) {

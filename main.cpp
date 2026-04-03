@@ -24,15 +24,63 @@ int main () {
         cout << "4. Remover primeira parada" << endl;
         cout << "5. Remover última parada" << endl;
         cout << "6. Buscar parada por nome" << endl;
-        cout << "7. Listar rota completa (trajeto de ida)";
-        cout << "8. Listar rota inversa (trajeto de volta)";
-        cout << "9. Contar paradas";
+        cout << "7. Listar rota completa (trajeto de ida)" << endl;
+        cout << "8. Listar rota inversa (trajeto de volta)" << endl;
+        cout << "9. Contar paradas" << endl;
         cout << "0. Sair" << endl;
         cout << "Escolha uma opcao: ";
         cin >> opcao;
 
-        
-
+        switch (opcao)
+        {
+        case 1:
+            cout << "Informe o nome da nova parada: ";
+            cin.ignore();
+            getline(cin, novoNome);
+            insereInicio(minhaRota, novoNome);
+            break;
+        case 2:
+            cout << "Informe o nome da nova parada: ";
+            cin.ignore();
+            getline(cin, novoNome);
+            insereFim(minhaRota, novoNome);
+            break;
+        case 3:
+            cout << "Informe o nome da parada imediatamente anterior a nova parada: ";
+            cin.ignore();
+            getline(cin, nomeBusca);
+            cout << "Informe o nome da nova parada: ";
+            getline(cin, novoNome);
+            inserePorNome(minhaRota, nomeBusca, novoNome);
+            break;
+        case 4:
+            removerInicio(minhaRota);
+            break;
+        case 5:
+            removerFim(minhaRota);
+            break;
+        case 6:
+            cout << "Informe o nome da parada: ";
+            cin.ignore();
+            getline(cin, nomeBusca);
+            buscarPorNome(minhaRota, nomeBusca);
+            break;
+        case 7:
+            imprimirIda(minhaRota);
+            break;
+        case 8:
+            imprimirVolta(minhaRota);
+            break;
+        case 9:
+            imprimeTotalParadas(minhaRota);
+            break;
+        case 0:
+            cout << "Encerrando o sistema..." << endl;
+            break;
+        default:
+            cout << "Digite uma opção válida!" << endl;
+            break;
+        }
     } while (opcao != 0);
     
     
