@@ -96,7 +96,7 @@ void removerInicio(ListaDuplamenteEncadeada &lista) {
 
     delete alvo;
     lista.totalParadas--;
-    cout << "Parada removida com sucesso!";
+    cout << "Parada removida com sucesso!" << endl;
 }
 
 void removerFim(ListaDuplamenteEncadeada &lista){
@@ -115,7 +115,7 @@ void removerFim(ListaDuplamenteEncadeada &lista){
 
     delete alvo;
     lista.totalParadas--;
-    cout << "Parada removida com sucesso!";
+    cout << "Parada removida com sucesso!" << endl;
 }
 
 void imprimirIda(ListaDuplamenteEncadeada lista) {

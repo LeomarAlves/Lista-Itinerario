@@ -158,9 +158,9 @@ int main () {
     teste_buscaPorNome();
     teste_imprimir();
 
-    cout << "\n========================================" << endl;
+    cout << "\n=========================================" << endl;
     cout << " ✓ TODOS OS TESTES PASSARAM COM SUCESSO!" << endl;
-    cout << "========================================" << endl << endl;
+    cout << "=========================================" << endl << endl;
 
     return 0;
 }
