@@ -75,7 +75,7 @@ Foi implementada uma **Lista Duplamente Encadeada**.
 
 **2. Por que essa estrutura é mais adequada para esse problema do que as demais?**
 
-A Lista Duplamente Encadeada é a estrutura ideal porque um itinerário de ônibus convencional exige navegação bidirecional. Justificando com base nas operações implementadas: as funções `imprimirIda()` e `imprimirVolta()` dependem diretamente dessa característica. Como cada nó (parada) possui um ponteiro tanto para o `proximo` quanto para o `anterior`, o sistema consegue percorrer a rota do início ao fim e fazer o caminho inverso de forma direta e eficiente ($O(n)$). Se usássemos uma lista simplesmente encadeada, a função de imprimir a volta seria extremamente ineficiente, exigindo o uso de múltiplos laços de repetição.
+A Lista Duplamente Encadeada é a estrutura ideal porque um itinerário de ônibus convencional exige navegação bidirecional. Justificando com base nas operações implementadas: as funções `imprimirIda()` e `imprimirVolta()` dependem diretamente dessa característica. Como cada nó (parada) possui um ponteiro tanto para o `proximo` quanto para o `anterior`, o sistema consegue percorrer a rota do início ao fim e fazer o caminho inverso de forma direta e eficiente (O(*n*)). Se usássemos uma lista simplesmente encadeada, a função de imprimir a volta seria extremamente ineficiente, exigindo o uso de múltiplos laços de repetição.
 
 **3. Haveria algum cenário real em que outra variação de lista seria mais vantajosa?**
 
